@@ -1,5 +1,4 @@
 # README
-
 # chat-space DB設計
 ## usersテーブル
 |Column|Type|Options|
@@ -37,3 +36,4 @@
 |datetime|integer|null: false|
 ### Association
 - belongs_to :user
+
