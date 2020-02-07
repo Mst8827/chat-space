@@ -3,7 +3,7 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 |email|string|null: false|
 |password|string|null: false|
 ### Association
@@ -32,7 +32,8 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|
+|text|text|foreign_key: true|
+|image|text|foreign_key: true|
 ### Association
 - belongs_to :user
 - belongs_to :group
