@@ -7,7 +7,8 @@
 |email|string|null: false|
 |password|string|null: false|
 ### Association
-- has_many :groups
+- has_many :groups, though: :users_groups
+- has_many :users_groups
 - has_many :messages
 
 ## groupsテーブル
@@ -15,6 +16,8 @@
 |------|----|-------|
 |group_name|string|null: false|
 ### Association
+- has_many :users, through: :users_groups
+- has_many :users_groups
 - has_many :messages
 
 ## users_groupsテーブル
@@ -36,4 +39,4 @@
 |datetime|integer|null: false|
 ### Association
 - belongs_to :user
-
+- belongs_to :group
