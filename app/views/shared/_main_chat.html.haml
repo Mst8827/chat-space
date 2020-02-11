@@ -1,0 +1,37 @@
+.MainChat
+  .MainChat__header
+    .MainChat__header__GroupInfo
+      .MainChat__header__GroupName test
+      .MainChat__header__GroupMember Member : name
+    %a{:href => "#"}
+    .MainChat__header__EditBtn Edit
+  
+  .MainChat__MessageList
+
+    .MainChat__MessageList__NewMessage1  
+      %p.MainChat__MessageList__NewMessage1__name masa 
+      %p.MainChat__MessageList__NewMessage1__date 2019/11/20(Wed) 17:43:01 
+      %p.MainChat__MessageList__NewMessage1__comment おはよう！
+
+    .MainChat__MessageList__NewMessage2
+      %p.MainChat__MessageList__NewMessage2__name masa 
+      %p.MainChat__MessageList__NewMessage2__date 2019/11/20(Wed) 17:43:01 
+      %p.MainChat__MessageList__NewMessage2__comment 今日は夜から雨
+
+
+  .MainChat__MessageForm
+    %form.NewMessage
+      .InputBox
+        %input{type: "text", class: "InputBox__text",placeholder: "type a message"}
+        %label{class: "InputBox__image"}
+          =icon('fas', 'image')
+          %input{type: "file", class: "InputBox__image__file"}
+      %input{type: "submit", class: "SubmitBtn"}
+
+
+
+
+
+
+
+

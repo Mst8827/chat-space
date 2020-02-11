@@ -1,0 +1,74 @@
+$mainFontColor: #ffffff;
+
+.wrapper {
+  height: 100vh;
+  display: flex; 
+}
+
+.SideBar {
+
+   width: 300px;  
+
+  &__header {
+    height: 100px;
+    background-color: #253141;
+    position: relative;
+
+    &__info {
+      height: 20px;
+      width: 260px;
+      background-color:#333333; 
+      position: absolute;
+      margin: 40px 20px;
+      display: flex;
+      justify-content: space-between;
+
+      &__name {
+        line-height: 20px;
+        color: $mainFontColor;
+      }
+
+      &__icons {
+        width: 60px;
+        text-align: right;
+      }
+    }
+  }
+
+  &__GroupList {
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+    background-color: #2f3e51;
+    padding: 0 20px;
+
+    &__GroupInfo {
+      padding-top: 0;
+      height: 65px;
+      color: $mainFontColor;
+      font-weight: bold;
+
+      &__name {
+        font-size: 15px;
+        padding-top: 20px;
+      }
+      
+      &__comment {
+        font-size: 11px;
+        padding-top: 5px;
+      }
+    
+    }
+
+  }
+}
+
+.EditBtn {
+  color: $mainFontColor;
+  text-decoration: none;
+}
+
+.CogBtn {
+  color: $mainFontColor;
+  text-decoration: none;
+}
+
