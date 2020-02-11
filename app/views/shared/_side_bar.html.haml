@@ -1,0 +1,20 @@
+.SideBar
+  .SideBar__header
+    .SideBar__header__info
+      .SideBar__header__info__name masa
+      .SideBar__header__info__icons
+        = link_to "#", class: "EditBtn" do
+          = icon('fas', 'edit')
+        = link_to "#", class: "CogBtn" do
+          = icon('fas', 'cog')
+
+  .SideBar__GroupList
+    .SideBar__GroupList__GroupInfo
+      %p.SideBar__GroupList__GroupInfo__name techcamp
+      %p.SideBar__GroupList__GroupInfo__comment まだメッサージはありません
+      
+      %p.SideBar__GroupList__GroupInfo__name techexpert
+      %p.SideBar__GroupList__GroupInfo__comment まだメッサージはありません
+
+
+
