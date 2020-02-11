@@ -29,17 +29,26 @@ $MessageCommentColor: #434a54;
       color: #999999;
     }
 
-    &__EditBtn {
-      height: 40px;
-      line-height: 40px;
-      padding: 0 20px;
-      margin-top: 30px;
-      border: solid;
-      border-width:thin;
-      color: #38aef0;
-      width: 72px;
-      margin-right: 40px;
+    &__RightBox {
+      a {
+        text-decoration: none;
+      }  
+
+      &__EditBtn {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-top: 30px;
+        border: solid;
+        border-width:thin;
+        color: #38aef0;
+        width: 72px;
+        margin-right: 40px;
+        
+      }
+
     }
+    
 
 
   }

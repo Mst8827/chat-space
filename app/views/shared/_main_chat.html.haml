@@ -1,11 +1,17 @@
 .MainChat
+
   .MainChat__header
+  
     .MainChat__header__GroupInfo
       .MainChat__header__GroupName test
       .MainChat__header__GroupMember Member : name
-    %a{:href => "#"}
-    .MainChat__header__EditBtn Edit
-  
+
+    .MainChat__header__RightBox
+      = link_to "#" do
+        .MainChat__header__RightBox__EditBtn Edit
+      
+
+
   .MainChat__MessageList
 
     .MainChat__MessageList__NewMessage1  
