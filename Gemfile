@@ -53,3 +53,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #erbファイルをHAMLに変換するためにHAMLを導入
 gem 'haml-rails'
+#FontAwesome用のgemをインストール
+gem 'font-awesome-sass'
