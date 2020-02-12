@@ -6,8 +6,8 @@ $mainFontColor: #ffffff;
 }
 
 .SideBar {
-
-   width: 300px;  
+  
+  width: 300px;  
 
   &__header {
     height: 100px;
@@ -44,17 +44,18 @@ $mainFontColor: #ffffff;
     &__GroupInfo {
       padding-top: 0;
       height: 65px;
-      color: $mainFontColor;
       font-weight: bold;
 
       &__name {
         font-size: 15px;
         padding-top: 20px;
+        color: $mainFontColor;
       }
 
       &__comment {
         font-size: 11px;
         padding-top: 5px;
+        color: $mainFontColor;
       }
     
     }
