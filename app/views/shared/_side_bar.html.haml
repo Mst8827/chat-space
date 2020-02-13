@@ -12,10 +12,11 @@
   .SideBar__GroupList
     - current_user.groups.each do |group|
       .SideBar__GroupList__GroupInfo
-        = link_to "#" do
+        = link_to group_messages_path(group) do
           %p.SideBar__GroupList__GroupInfo__name
             = group.name
-          %p.SideBar__GroupList__GroupInfo__comment まだメッサージはありません
+          %p.SideBar__GroupList__GroupInfo__comment 
+            = group.show_last_message 
       
       -# %p.SideBar__GroupList__GroupInfo__name techexpert
       -# %p.SideBar__GroupList__GroupInfo__comment まだメッサージはありません

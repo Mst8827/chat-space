@@ -46,6 +46,10 @@ $mainFontColor: #ffffff;
       height: 65px;
       font-weight: bold;
 
+      a {
+        text-decoration: none;
+      }
+
       &__name {
         font-size: 15px;
         padding-top: 20px;

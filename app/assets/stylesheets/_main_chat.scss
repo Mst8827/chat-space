@@ -24,9 +24,36 @@ $MessageCommentColor: #434a54;
       color: #333333;
     }
 
-    &__GroupMember {
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: $MessageNameColor;
+    
+    }
+    
+    &__CurrentGroup {
       font-size: 12px;
       color: #999999;
+
+      display: flex;
+
+      &__nama {
+        display: flex;
+      
+      }
+      
+    }
+
+    
+
+    ul {
+      font-size: 12px;
+      color: #999999;
+
+      li {
+        display: inline;
+      }
+      
     }
 
     &__RightBox {
@@ -55,91 +82,152 @@ $MessageCommentColor: #434a54;
   &__MessageList {
     background-color: #fafafa;
     height: calc(100% - 100px - 90px);
-
-    &__NewMessage1 {
-      padding: 46px 40px;
-
-      &__name {
-        color: $MessageNameColor;
-        font-size: 16px;
-        float: left;
-        margin-right: 10px;
-      }
-
-      &__date {
-        color: $MessageDateColor;
-        font-size: 12px;     
-      }
-
-      &__comment {
-        color: $MessageCommentColor;
-        font-size: 14px;
-        clear: both;
-      }
-      
-    }
-
-    &__NewMessage2 {
-      padding: 46px 40px;
-
-      &__name {
-        color: $MessageNameColor;
-        font-size: 16px;
-        float: left;
-        margin-right: 10px;
-      }
-
-      &__date {
-        color: $MessageDateColor;
-        font-size: 12px;     
-      }
-
-      &__comment {
-        color: $MessageCommentColor;
-        font-size: 14px;
-        clear: both;
-      }
-    }
-
   }
 
+
+
+  .message {
+    padding: 30px 40px;
+
+    .upper-message {
+      
+      &__user-name {
+        font-size: 16px;
+        color: $MessageNameColor;
+      }
+      &__date {
+        color: $MessageDateColor;
+        font-size: 12px;
+  
+      }
+  
+    }
+
+    .lower-message {
+      font-size: 14px;
+      color: $MessageCommentColor;
+    }
+  }
+
+  
+
+    // &__NewMessage1 {
+    //   padding: 46px 40px;
+      
+
+    //   &__name {
+    //     color: $MessageNameColor;
+    //     font-size: 16px;
+    //     float: left;
+    //     margin-right: 10px;
+    //   }
+
+    //   &__date {
+    //     color: $MessageDateColor;
+    //     font-size: 12px;     
+    //   }
+
+    //   &__comment {
+    //     color: $MessageCommentColor;
+    //     font-size: 14px;
+    //     clear: both;
+    //   }
+      
+    // }
+
+    // &__NewMessage2 {
+    //   padding: 46px 40px;
+
+    //   &__name {
+    //     color: $MessageNameColor;
+    //     font-size: 16px;
+    //     float: left;
+    //     margin-right: 10px;
+    //   }
+
+    //   &__date {
+    //     color: $MessageDateColor;
+    //     font-size: 12px;     
+    //   }
+
+    //   &__comment {
+    //     color: $MessageCommentColor;
+    //     font-size: 14px;
+    //     clear: both;
+    //   }
+    // }
+
+  
+
   &__MessageForm {
+    position: relative;
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px
+
   }
 
-  .NewMessage {
+    form {
     display: flex;
-  }
-
-  .InputBox {
-    width: 100%;
-    display: flex;
-    position: relative;
-
-    &__text {
-      height: 50px;
-      width: 100%;
-      color: #434a54;
-      border-style: none;
-      padding: 0 40px 0 10px;
     }
+    
+      .InputBox__text {
+        width: 100%;
+        height: 50px;
+        color: #434a54;
+        border-style: none;
+        padding: 0 40px 0 10px;   
+      }
 
-    &__image {
-      font-size: 1.3rem;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      right: 10px;
+      .InputBox {
+        position: absolute;
+        top: 30px;
+        right: 170px;
+
+        .InputBox__image {
+          font-size: 1.3rem;
+          cursor: pointer;
+
+          &__hidden {
+            display: none;
+          }
+        
+        }
+      
+      }
+        
+
+  // .NewMessage {
+  //   display: flex;
+  // }
+
+  // .InputBox {
+  //   width: 100%;
+  //   display: flex;
+  //   position: relative;
+
+  //   &__text {
+  //     height: 50px;
+  //     width: 100%;
+  //     color: #434a54;
+  //     border-style: none;
+  //     padding: 0 40px 0 10px;
+  //   }
+
+  //   &__image {
+  //     font-size: 1.3rem;
+  //     cursor: pointer;
+  //     position: absolute;
+  //     top: 10px;
+  //     right: 10px;
     
       
-      &__file {
-        display: none;
+  //     &__file {
+  //       display: none;
 
-      }
-    }
-  }
+  //     }
+  //   }
+  // }
 
   .SubmitBtn {
     width: 100px;
