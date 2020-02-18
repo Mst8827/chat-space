@@ -20,3 +20,4 @@ public/uploads/*
 app/.DS_Store
 app/assets/.DS_Store
 app/assets/stylesheets/.DS_Store
+config/secrets.yml
